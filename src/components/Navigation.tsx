@@ -18,30 +18,26 @@ const links = [
   {
     name: "Рейтинг",
     img: RatingImg,
-    // path: "/rating",
-    path: "/",
+    path: "/rating",
   },
   {
     name: "Задания",
     img: TasksImg,
-    // path: "/tasks",
-    path: "/",
+    path: "/tasks",
   },
   {
     name: "Рынок",
     img: MarketImg,
-    // path: "/market",
-    path: "/",
+    path: "/market",
   },
 ];
 
 const Navigation = ({ className }: { className?: string }) => {
   return (
     <div
-      className={`flex items-center justify-between w-full bg-[#333B4E] border-[#000E2E] rounded-[12px] px-[24px] ${className}`}
+      className={`flex items-center justify-between w-full rounded-[12px] px-[24px] ${className}`}
       style={{
-        boxShadow:
-          "0px 2px 2.5px 0px #000000CC, 0px 5px 2.2px 0px #655F86 inset",
+        background: "linear-gradient(0deg, rgba(85, 72, 53, 0.95), rgba(85, 72, 53, 0.95)), linear-gradient(0deg, #FA6503, #FA6503)"
       }}
     >
       {links.map(({ name, img, path }, index) => (

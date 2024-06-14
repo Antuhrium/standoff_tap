@@ -1,43 +1,34 @@
-// import WebApp from "@twa-dev/sdk";
-import { useEffect, useState } from "react";
-import Balance from "../components/ui/Balance";
 import Button from "../components/ui/Button";
 import Progress from "../components/ui/Progress";
 
-import Bg from "/static/img/backgrounds/main-bg.png";
 import Navigation from "../components/Navigation";
-import DayBoost from "../components/ui/DayBoost";
-import Boosters from "../components/ui/Boosters";
-// import TapImg from "/tap-img.png";
+import TapImg from "/static/svg/main-button.svg";
+import Balance from "/static/svg/balance.svg";
 
 const HomePage = () => {
-
   return (
-    <main className="base-page-style relative px-5 items-center">
-      <img
-        className="absolute -z-10 h-full w-full object-center object-cover"
-        src={Bg}
-        alt="bg"
-      />
-      <div className="flex items-center flex-col gap-[20px] mt-[65px]">
-        <p className="text-[18px] opacity-[80%]">Ваш баланс</p>
-        <Balance balance={6.534} />
+    <main className="base-page-style relative px-5 items-center bg-gradient">
+      <Button className={"mt-[15px]"}>Поиск сообщества</Button>
+      <div className="mt-10 flex items-center gap-[15px]">
+        <img src={Balance} alt="Balance" />
+        <span className="font-medium text-5xl leading-[57px] text-gradient">
+          6.534
+        </span>
       </div>
-      <div className="flex flex-col gap-[25px]">
-        <h2 className="text-[22px] font-medium">Ежедневные бустеры</h2>
-        <div className="flex flex-col gap-[10px]">
-          <DayBoost />
-          <DayBoost />
-        </div>
+      <button className="mt-[70px] max-w-[330px] h-[330px] w-full transition-transform active:scale-95 outline-none">
+        <img src={TapImg} alt="TapImg" className="w-full h-auto" />
+      </button>
+      <div className="w-full flex flex-col mt-[50px]">
+        <p className="text-base leading-[19px]">
+          <span className="text-[#F3B123]">829</span>
+          <span className="text-[rgba(255,95,0,0.6)]"> / 1000</span>
+        </p>
+        <Progress value={1000} className="mt-[10px]" />
       </div>
-      <div>
-        <Boosters />
-        <Boosters />
-        <Boosters />
-        <Boosters />
-      </div>
+      <Navigation className="mt-[15px]" />
     </main>
   );
 };
 
 export default HomePage;
+

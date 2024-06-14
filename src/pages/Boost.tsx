@@ -1,27 +1,18 @@
-// import WebApp from "@twa-dev/sdk";
-import { useEffect, useState } from "react";
-import Balance from "../components/ui/Balance";
-import Button from "../components/ui/Button";
-import Progress from "../components/ui/Progress";
-
-import Bg from "/static/img/backgrounds/main-bg.png";
-import Navigation from "../components/Navigation";
+// import Bg from "/static/img/backgrounds/main-bg.png";
 import DayBoost from "../components/ui/DayBoost";
 import Boosters from "../components/ui/Boosters";
-// import TapImg from "/tap-img.png";
 
 const Boost = () => {
-
   return (
     <main className="base-page-style relative px-5 items-center">
-      <img
-        className="absolute -z-10 h-full w-full object-center object-cover"
-        src={Bg}
-        alt="bg"
-      />
       <div className="flex items-center flex-col gap-[20px] mt-[65px]">
         <p className="text-[18px] opacity-[80%]">Ваш баланс</p>
-        <Balance balance={6.534} />
+        <div className="mt-10 flex items-center gap-[15px]">
+          <img src="/static/svg/balance.svg" alt="Balance" />
+          <span className="font-medium text-5xl leading-[57px] text-gradient">
+            6.534
+          </span>
+        </div>
       </div>
       <div className="flex flex-col gap-[25px]">
         <div className="flex flex-col gap-[25px]">

@@ -3,14 +3,13 @@ import Progress from "../components/ui/Progress";
 
 import Navigation from "../components/Navigation";
 import TapImg from "/static/svg/main-button.svg";
-import Balance from "/static/svg/balance.svg";
 
 const HomePage = () => {
   return (
     <main className="base-page-style relative px-5 items-center bg-gradient">
       <Button className={"mt-[15px]"}>Поиск сообщества</Button>
       <div className="mt-10 flex items-center gap-[15px]">
-        <img src={Balance} alt="Balance" />
+        <img src="/static/svg/balance.svg" alt="Balance" />
         <span className="font-medium text-5xl leading-[57px] text-gradient">
           6.534
         </span>

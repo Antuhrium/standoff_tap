@@ -1,4 +1,5 @@
 import Button from "../components/ui/Button";
+
 import { IFriendsArray, friendsArray } from "../utils/data";
 
 const FriendsPage = () => {

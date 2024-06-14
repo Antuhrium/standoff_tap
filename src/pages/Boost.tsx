@@ -9,10 +9,16 @@ const Boost = () => {
     >
       <p className="text-[18px] opacity-80 mt-[65px]">Ваш баланс</p>
       <div className="flex items-end gap-[15px]">
-        <img src="/static/svg/balance.svg" alt="Balance" className="mb-[9px]" 
-      style={{filter: "drop-shadow(0 0 11px #F4D9AF)"}}/>
-        <span className="font-medium text-5xl leading-[57px] text-gradient"
-      style={{textShadow: "0 0 11px #F4D9AF"}}>
+        <img
+          src="/static/svg/balance.svg"
+          alt="Balance"
+          className="mb-[9px]"
+          style={{ filter: "drop-shadow(0 0 11px #F4D9AF)" }}
+        />
+        <span
+          className="font-medium text-5xl leading-[57px] text-gradient"
+          style={{ textShadow: "0 0 11px #F4D9AF" }}
+        >
           6.534
         </span>
       </div>

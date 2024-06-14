@@ -8,9 +8,18 @@ import SquadPage from "./pages/SquadPage";
 import Boost from "./pages/Boost";
 import Tasks from "./pages/Tasks";
 import TaskItem from "./pages/TaskItem";
-
+import { useEffect, useState } from "react";
 
 function App() {
+  const [uid, setUid] = useState<string | null>(null);
+
+  useEffect(() => {
+    const uid = document.getElementById("root")?.getAttribute("uid");
+    if (uid) {
+      setUid(uid);
+    }
+  }, []);
+
   return (
     <Router>
       <div className="App">

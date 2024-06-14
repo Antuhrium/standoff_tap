@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { IFriendsArray, friendsArray } from "../utils/data";
 import { useNavigate } from "react-router-dom";
 

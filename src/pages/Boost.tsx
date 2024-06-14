@@ -10,7 +10,7 @@ import DayBoost from "../components/ui/DayBoost";
 import Boosters from "../components/ui/Boosters";
 // import TapImg from "/tap-img.png";
 
-const HomePage = () => {
+const Boost = () => {
 
   return (
     <main className="base-page-style relative px-5 items-center">
@@ -24,20 +24,25 @@ const HomePage = () => {
         <Balance balance={6.534} />
       </div>
       <div className="flex flex-col gap-[25px]">
-        <h2 className="text-[22px] font-medium">Ежедневные бустеры</h2>
-        <div className="flex flex-col gap-[10px]">
-          <DayBoost />
-          <DayBoost />
+        <div className="flex flex-col gap-[25px]">
+          <h2 className="text-[22px] font-medium">Ежедневные бустеры</h2>
+          <div className="flex flex-col gap-[10px]">
+            <DayBoost />
+            <DayBoost />
+          </div>
         </div>
-      </div>
-      <div>
-        <Boosters />
-        <Boosters />
-        <Boosters />
-        <Boosters />
+        <div className="flex flex-col gap-[25px]">
+          <h2 className="text-[22px] font-medium">Бустеры</h2>
+          <div className="flex flex-col gap-[10px] w-[350px] h-[345px] bg-[#554835] rounded-[12px] p-[20px]">
+            <Boosters />
+            <Boosters />
+            <Boosters />
+            <Boosters />
+          </div>
+        </div>
       </div>
     </main>
   );
 };
 
-export default HomePage;
+export default Boost;

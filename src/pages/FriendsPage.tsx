@@ -1,6 +1,6 @@
 import Button from "../components/ui/Button";
 
-import { formatNumber } from "../utils/formatNumbers";
+//import { formatNumber } from "../utils/formatNumbers";
 import { IFriendsArray, friendsArray } from "../utils/friendsArray";
 
 const FriendsPage = () => {

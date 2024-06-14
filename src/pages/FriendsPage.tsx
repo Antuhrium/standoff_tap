@@ -41,7 +41,7 @@ const FriendsPage = () => {
                   <img
                     src={el.avatar}
                     alt="avatar"
-                    className="w-[50px] h-[50px]"
+                    className="w-[50px] h-[50px] rounded-full"
                   />
                   <span className="max-w-[169px] font-medium text-base">
                     {el.nickname}

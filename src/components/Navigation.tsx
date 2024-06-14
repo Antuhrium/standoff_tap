@@ -37,12 +37,17 @@ const Navigation = ({ className }: { className?: string }) => {
     <div
       className={`flex items-center justify-between w-full rounded-[12px] px-[24px] ${className}`}
       style={{
-        background: "linear-gradient(0deg, rgba(85, 72, 53, 0.95), rgba(85, 72, 53, 0.95)), linear-gradient(0deg, #FA6503, #FA6503)"
+        background:
+          "linear-gradient(0deg, rgba(85, 72, 53, 0.95), rgba(85, 72, 53, 0.95)), linear-gradient(0deg, #FA6503, #FA6503)",
       }}
     >
       {links.map(({ name, img, path }, index) => (
         <>
-          <NavLink key={index} to={path} className="flex flex-col items-center">
+          <NavLink
+            key={index}
+            to={path}
+            className="flex flex-col items-center transition-opacity active:opacity-80"
+          >
             <img className="w-[30px] h-[30px]" src={img} alt={name} />
             <span className="text-[12px] font-medium leading-[14px]">
               {name}

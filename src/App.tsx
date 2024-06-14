@@ -7,6 +7,7 @@ import RatePage from "./pages/RatePage";
 import SquadPage from "./pages/SquadPage";
 import Boost from "./pages/Boost";
 import Tasks from "./pages/Tasks";
+import TaskItem from "./pages/TaskItem";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/rating" element={<RatePage />} />
           <Route path="/rating/:id" element={<SquadPage />} />
           <Route path="/tasks" element={<Tasks />} />
+          <Route path="/tasks/:id" element={<TaskItem />} />
           <Route path="/market" element={<Boost />} />
         </Routes>
       </div>

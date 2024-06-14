@@ -8,9 +8,17 @@ const HomePage = () => {
   return (
     <main className="base-page-style relative px-5 items-center bg-gradient">
       <Button className={"mt-[15px]"}>Поиск сообщества</Button>
-      <div className="mt-10 flex items-center gap-[15px]">
-        <img src="/static/svg/balance.svg" alt="Balance" />
-        <span className="font-medium text-5xl leading-[57px] text-gradient">
+      <div className="flex items-end gap-[15px] mt-10">
+        <img
+          src="/static/svg/balance.svg"
+          alt="Balance"
+          className="mb-[9px]"
+          style={{ filter: "drop-shadow(0 0 11px #F4D9AF)" }}
+        />
+        <span
+          className="font-medium text-5xl leading-[57px] text-gradient"
+          style={{ textShadow: "0 0 11px #F4D9AF" }}
+        >
           6.534
         </span>
       </div>

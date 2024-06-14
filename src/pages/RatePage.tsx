@@ -60,8 +60,16 @@ const RatePage = () => {
         </h2>
       ) : (
         <div className="mt-10 flex items-center gap-[15px] mb-6">
-          <img src="/static/svg/balance.svg" alt="Balance" />
-          <span className="font-medium text-5xl leading-[57px] text-gradient">
+          <img
+            src="/static/svg/balance.svg"
+            alt="Balance"
+            className="mt-[3px]"
+            style={{ filter: "drop-shadow(0 0 11px #F4D9AF)" }}
+          />
+          <span
+            className="font-medium text-5xl leading-[57px] text-gradient"
+            style={{ textShadow: "0 0 11px #F4D9AF" }}
+          >
             100.000
           </span>
         </div>
@@ -75,9 +83,17 @@ const RatePage = () => {
         }}
       >
         {friendsArray.map((el: IFriendsArray, index: number) => (
-          <div key={el.id} className="flex items-center w-full gap-[15px]" onClick={() => navigate(`/rating/${el.id}`)}>
+          <div
+            key={el.id}
+            className="flex items-center w-full gap-[15px]"
+            onClick={() => navigate(`/rating/${el.id}`)}
+          >
             <span className="text-base font-bold text-[#F98905]">{index}</span>
-            <img src={el.avatar} alt="avatar" className="w-[50px] h-[50px]" />
+            <img
+              src={el.avatar}
+              alt="avatar"
+              className="w-[50px] h-[50px] rounded-full"
+            />
             <div className="flex flex-col">
               <span className="max-w-[169px] font-medium text-base">
                 {el.nickname}

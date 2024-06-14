@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Boosters = () => {
   return (
     <button className='flex flex-row gap-[15px] h-[65px] items-center'>

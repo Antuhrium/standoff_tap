@@ -56,7 +56,7 @@ const SquadPage = () => {
         {friendsArray.map((el: IFriendsArray, index: number) => (
           <div key={el.id} className="flex items-center w-full gap-[15px] mb-0">
             <span className="text-base font-bold text-[#F98905]">{index}</span>
-            <img src={el.avatar} alt="avatar" className="w-[50px] h-[50px]" />
+            <img src={el.avatar} alt="avatar" className="w-[50px] h-[50px] rounded-full" />
             <div className="flex flex-col">
               <span className="max-w-[169px] font-medium text-base">
                 {el.nickname}
